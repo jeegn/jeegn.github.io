@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+.skills-grid, .projects-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.skill-card, .project-card {
+    padding: 20px;
+    border-radius: 8px;
+    background: #ddd;
+}
+
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode .skill-card, .dark-mode .project-card {
+    background: #444;
+}
