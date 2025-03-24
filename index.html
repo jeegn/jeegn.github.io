@@ -1,106 +1,182 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jeegn Dani - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Jeegn Dani</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">Jeegn Dani</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><button id="dark-mode-toggle"><i class="fas fa-moon"></i></button></li>
-        </ul>
-    </nav>
+		<!-- Wrapper -->
+		<div id="wrapper">
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-text">
-            <h1>Jeegn Dani</h1>
-            <p>Machine Learning Researcher | Software Engineer | Purdue University</p>
-            <div class="hero-links">
-                <a href="assets/Jeegn_Dani_Resume.pdf" class="btn">View Resume</a>
-                <a href="https://linkedin.com/in/jeegndani" class="btn">LinkedIn</a>
-                <a href="https://github.com/jeegn" class="btn">GitHub</a>
-            </div>
-        </div>
-        <img src="images/ProfilePicCropped.png" alt="Jeegn Dani">
-    </header>
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Master's student in Computer Science at Purdue University specializing in Machine Learning and Software Development. My research interests include deep learning, probabilistic ML, and self-supervised learning for remote sensing.</p>
-        <p>I hold a Bachelor's degree in Computer Science and Data Science, graduating with the highest distinction. I have worked on multiple research projects in applied ML and contributed to publications.</p>
-    </section>
+					<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Jeegn Dani</strong></a>
+					</header>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card"><i class="fas fa-code"></i> Python, C++, Java</div>
-            <div class="skill-card"><i class="fas fa-database"></i> SQL, MongoDB</div>
-            <div class="skill-card"><i class="fas fa-brain"></i> Deep Learning, NLP</div>
-            <div class="skill-card"><i class="fas fa-cloud"></i> AWS, Docker, Kubernetes</div>
-            <div class="skill-card"><i class="fas fa-robot"></i> Computer Vision, ROS</div>
-            <div class="skill-card"><i class="fas fa-book-open"></i> Teaching & Mentorship</div>
-        </div>
-    </section>
+					<!-- Banner -->
+					<section id="banner">
+						<div class="content">
+							<h1>Jeegn Dani</h1>
+							<p>
+								I'm a Master's student in Computer Science at Purdue University, specializing in Machine Learning, Software Engineering, and Academic Research.
+                            	I'm seeking full-time roles in software engineering, data science and ML. I have published research in robotics and CS Education.
+							</p>
+							
+							<p>
+								I previously graduated summa cum laude from Purdue University with a Dual Bachelor's degree in Computer Science and Data Science. 
+								During my time there, I worked on multiple research projects across various domains of applied Machine Learning.
+							</p>
+							
+							<ul class="actions">
+								<li><a href="docs/job_resume.pdf" class="button big">View Resume</a></li>
+								<li><a href="https://linkedin.com/in/jeegndani" class="button big">LinkedIn</a></li>
+								<li><a href="https://github.com/jeegn" class="button big">GitHub</a></li>
+							</ul>
+						</div>
+						<span class="image object" style="max-width: 250px;">
+							<img src="images/ProfilePicCropped.png" alt="Jeegn Dani" style="width: 100%;"/>
+						</span>
+					</section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Research & Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="images/project1.jpg" alt="">
-                <h3>Self-Supervised Learning for Remote Sensing</h3>
-                <p>Investigating contrastive and masked autoencoder learning for satellite imagery.</p>
-                <a href="https://arxiv.org/pdf/2306.06543.pdf" class="btn">Read Paper</a>
-            </div>
-            <div class="project-card">
-                <img src="images/project2.jpg" alt="">
-                <h3>Multi-Agent Neural Rearrangement Planning</h3>
-                <p>Developed PyBullet-based simulation for autonomous rearrangement in warehouses.</p>
-                <a href="https://corallab.net/people" class="btn">Research Details</a>
-            </div>
-        </div>
-    </section>
+					<!-- Skills & Experience -->
+					<!-- <section>
+						<header class="major">
+							<h2>Skills & Experience</h2>
+						</header>
+						<div class="features">
+							<article>
+								<span class="icon fa-code"></span>
+								<div class="content">
+									<h3>Programming & Technologies</h3>
+									<p>Python, C, Java, C++, SQL, PyTorch, AWS, Docker, Kubernetes, ROS, Django, Latex</p>
+								</div>
+							</article>
+							<article>
+								<span class="icon fa-brain"></span>
+								<div class="content">
+									<h3>Machine Learning & AI Research</h3>
+									<p>Deep Learning, Computer Vision, NLP, Bayesian ML</p>
+								</div>
+							</article>
+							<article>
+								<span class="icon fa-robot"></span>
+								<div class="content">
+									<h3>Software Development & Engineering</h3>
+									<p>Automated grading tools and Robotics Pipelines.</p>
+								</div>
+							</article>
+							<article>
+								<span class="icon fa-chalkboard-teacher"></span>
+								<div class="content">
+									<h3>Teaching & Academic Contributions</h3>
+									<p>Graduate Teaching Assistant at Purdue for courses like Database Systems, NLP, and Algorithms.</p>
+								</div>
+							</article>
+						</div>
+					</section> -->
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-item">
-            <h3>Graduate Teaching Assistant</h3>
-            <p>Purdue University | 2021 - Present</p>
-            <ul>
-                <li>Designed autograding systems, reducing grading workload by 20+ hours per week.</li>
-                <li>Led 50+ student recitations in Database Systems and Data Science.</li>
-            </ul>
-        </div>
-    </section>
+					<!-- Research & Projects -->
+					<section>
+						<header class="major">
+							<h2>Research & Projects</h2>
+						</header>
+						<div class="posts">
+							<article>
+								<a href="#" class="image"><img src="images/AutograderSruvey.png" alt="RA Autograder Screenshot" /></a>
+								<h3>Relational Algebra Autograder</h3>
+								<p>A LaTeX-based autograding tool for evaluating Relational Algebra queries by converting them to SQL and validating outputs. Designed for CS education and deployed in courses with 250+ students.</p>
+								<ul class="actions">
+									<li><a href="https://github.com/jeegn/relational-algebra-autograder" class="button">View on GitHub</a></li>
+									<!-- <li><a href="docs/RA_Autograder_Paper.pdf" class="button">Read Paper</a></li> -->
+								</ul>
+							</article>
+						
+							<article>
+								<a href="#" class="image"><img src="images/MANER.png" alt="" /></a>
+								<h3>Multi-Agent Neural Rearrangement Planning (MANER)</h3>
+								<p>A deep learning-based framework enabling teams of robots to rearrange objects collaboratively in cluttered, real-world environments like warehouse floor</p>
+					
+								<ul class="actions">
+									<li><a href="https://arxiv.org/pdf/2306.06543.pdf" class="button">Read Paper</a></li>
+								</ul>
+							</article>
+							<article>
+								<a href="https://arxiv.org/pdf/2306.06543.pdf" class="image"><img src="images/SSLRemoteSensing.webp" alt="" /></a>
+								<h3>Self-Supervised Learning for Remote Sensing</h3>
+								<p>Exploring SeCo, SatMAE, and CROMA for pretraining on satellite imagery with a focus on performance across globally diverse and temporally representative land cover data.</p>
+								<ul class="actions">
+									<li><a href="https://arxiv.org/pdf/2306.06543.pdf" class="button">Project Details</a></li>
+								</ul>
+							</article>
+							
+							<article>
+								<a href="#" class="image"><img src="images/combined_mcmc_image.png" alt="" /></a>
+								<h3>Dynamics-Based MCMC with Riemannian Manifolds</h3>
+								<p>A comparative study of HMC and MALA, with geometric insights into curvature-aware sampling on complex distributions.</p>
+								<ul class="actions">
+									<li><a href="docs/MCMC.pdf" class="button">Project Details</a></li>
+								</ul>
+							</article>
+						</div>
+					</section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:jeegndani1604@gmail.com">jeegndani1604@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/jeegndani">linkedin.com/in/jeegndani</a></p>
-        <p>GitHub: <a href="https://github.com/jeegn">github.com/jeegn</a></p>
-    </section>
+				</div>
+			</div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Jeegn Dani. All rights reserved.</p>
-    </footer>
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner">
 
-</body>
+					<!-- Menu -->
+					<!-- <nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header> -->
+						<!-- <ul>
+							<li><a href="index.html">Homepage</a></li>
+							<li><a href="assets/Jeegn_Dani_Resume.pdf">Resume</a></li>
+							<li><a href="research.html">Research</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="coursework.html">Coursework</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul> -->
+					<!-- </nav> -->
+
+					<!-- Contact -->
+					<section>
+						<header class="major">
+							<h2>Get in Touch</h2>
+						</header>
+						<ul class="contact">
+							<li class="icon solid fa-envelope"><a href="mailto:jeegndani1604@gmail.com">jeegndani1604@gmail.com</a></li>
+							<li class="icon brands fa-linkedin"><a href="https://linkedin.com/in/jeegndani">LinkedIn</a></li>
+							<li class="icon brands fa-github"><a href="https://github.com/jeegn">GitHub</a></li>
+						</ul>
+					</section>
+
+					<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; 2025 Jeegn Dani. Design by <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
